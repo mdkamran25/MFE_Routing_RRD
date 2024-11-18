@@ -7,8 +7,8 @@ const CartOrder = () => {
   const navigate = useNavigate();
 
   const handleNav = () => {
-    navigateTo(navigate, '/cartvalue');
-    // navigate('/cartvalue')
+    // navigateTo(navigate, '/cartvalue');
+    navigate('/cart/cartvalue')
   };
 
   const handleNavShop = () => {

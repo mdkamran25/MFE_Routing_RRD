@@ -10,11 +10,14 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
+  const isStandalone = !window.location.pathname.includes('/cart');
+  console.log({ isStandalone });
   return (
     <StyledApp>
-      <Routes>
-        <Route path='/' element={<CartOrder />} />
-        <Route path='/cartvalue' element={<CartValue />} />
+      <Routes >
+        <Route path={'/'} element={<CartOrder />} />
+        <Route path={'/cartOrder'} element={<CartOrder />} />
+        <Route path={'/cartvalue'} element={<CartValue />} />
       </Routes>
     </StyledApp>
   );

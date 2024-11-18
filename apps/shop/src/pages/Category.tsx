@@ -7,7 +7,8 @@ const Category = () => {
   const navigate = useNavigate();
 
   const handleNav = () => {
-    navigateTo(navigate, '/shopItem');
+    // navigateTo(navigate, '/shopItem');
+    navigate('/shopItem')
   };
 
   const handleCart = () =>{
