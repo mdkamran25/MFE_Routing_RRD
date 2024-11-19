@@ -25,8 +25,8 @@ const prodConfig: ModuleFederationConfig = {
    * ]
    */
   remotes: [
-    ['shop', 'http://localhost:4201/'],
-    ['cart', 'http://localhost:4202/'],
+    ['shop', 'https://shopmfe.netlify.app/'],
+    ['cart', 'https://cartmfe.netlify.app/'],
   ],
 };
 
